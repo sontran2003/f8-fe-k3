@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+#container{
+    text-align: center;
+}  
+.form-dat-ban{
+    position: relative;
+}
+
+.input{
+    position: absolute;
+    left: 40%;
+}
+
+h1{
+    font-family: 'Bebas Neue', sans-serif;
+    color: rgb(74, 34, 34);
+}
+
+h2{
+    font-family: 'Alfa Slab One', cursive;
+    color: rgb(74, 34, 34);
+}
+
+input {
+    font-family: 'Bebas Neue', sans-serif;
+    width: 150px;
+    padding: 5px 10px;
+
+}
+button{
+    font-family: 'Alfa Slab One', cursive;
+    width: 175px;
+    padding: 5px 10px;
+    background-color: brown;
+    color: white;
+    border: none;
+}
+
+.input:hover button{
+    cursor: pointer;
+}

@@ -1,0 +1,47 @@
+#container {
+    display: flex;
+}
+
+.form-contach, .foteer{
+    display: inline-block;
+    width: 50%;
+}
+
+.name, .text-email, .subject{
+    width: 600px;
+    height: 27px;
+}
+
+.name, .text-email, .subject{
+    margin-bottom:12px;
+}
+
+.foteer{
+    margin-left: 25px;
+}
+
+.location, .email{
+    margin-bottom: 20px;
+}
+
+span{
+    padding-left: 10px;
+    color:  #777879;
+}
+
+button{
+    background-color: rgb(6, 187, 166);
+    padding: 10px;
+    color: white;
+    border: none;
+}
+
+.fa-solid{
+    color:  #777879;
+}
+
+hr{
+    width: 5%;
+    margin-right:94%;
+    border: 2px solid rgb(252, 199, 64);
+}

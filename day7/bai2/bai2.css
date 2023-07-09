@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@200&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Asap', sans-serif;
+  
+}
+.banner{
+    position: relative;
+    
+}
+.banner> img{
+    width: 100%;
+}
+
+.banner .logo{
+    position: absolute;
+    top: 513px;
+    background-color: #fff;
+    left: 150px;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+.banner .logo img{
+    width: 50%;
+}
+
+.text{
+    position: absolute;   
+    top: 535px;
+    left: 420px;
+    color: #fff;
+}
+
+
+.text h1{
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+
+.text b{
+    font-size: 25px;
+}
+
+.text span{
+    padding-right: 55px;
+}
+header nav{
+    float: right;
+    margin-right:30px ;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+}
+
+header nav ul li::after{
+    content: "";
+    background-color: brown;
+    display: block;
+    width: 0;
+    height: 4px;
+    transition: all 0.4s linear;
+    margin-top: 7px;
+}
+
+header nav ul li:hover::after{
+    width: 100%;
+} 
+
+header nav ul li:hover :nth-child(1){
+    color: brown;
+}
+
+header nav ul li:hover :nth-child(2){
+    color: brown;
+}
+
+header nav ul li:hover :nth-child(3){
+    color: brown;
+}
+
+

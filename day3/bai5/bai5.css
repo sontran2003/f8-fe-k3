@@ -1,0 +1,23 @@
+.text1{
+    background-color: royalblue;
+    display: inline;
+    padding: 10px 35px;
+    color: white;
+}
+
+#header, .button{
+    text-align: center;
+    padding-top: 50px;
+}
+
+b{
+    color: rgb(70, 146, 252);
+}
+
+button{
+    background-color: rgb(42, 40, 40);
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}

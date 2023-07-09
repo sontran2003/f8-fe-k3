@@ -1,0 +1,52 @@
+.navigation{
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.menu{
+    border: 1px solid rgb(160, 158, 18);
+    display: inline;
+}
+
+.menu a{
+     padding-left:15px ;
+    padding-right: 15px;
+    text-decoration: none;
+    color: rgb(160, 158, 18); 
+}
+
+
+.menu >.uae{
+    color: aliceblue;
+    background-color: rgb(160, 158, 18);
+}
+
+#contact-info{
+    margin-top:50px ;
+}
+
+.contact-info--address{
+    margin-top: 50px;
+}
+h1{
+    font-size: 20px;
+}
+
+#contact-info-wrap{
+    background-color: rgb(246, 241, 235);
+    margin: 0 50px;
+    padding-left: 50px;
+    display: flex;
+    flex-wrap:calc(100/2)
+}
+
+.map{
+   padding-left: 160px;
+}
+
+iframe{
+    width: 1200px;
+}
+
+.email > a{
+    color:rgb(160, 158, 18) ;
+}

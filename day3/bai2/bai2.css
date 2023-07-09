@@ -1,0 +1,17 @@
+img{
+    width: 100px;
+}
+
+h1{
+    text-align: center;
+}
+
+table{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+hr{
+    width: 5%;
+    border: 3px solid rgb(56, 129, 255);
+}
