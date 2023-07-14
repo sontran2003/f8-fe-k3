@@ -1,0 +1,106 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 70px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: bold;
+}
+
+.menu{
+    position: relative;
+}
+
+.menu .logo{
+    position: absolute;
+    left: 20%;
+    top: 20px;
+}
+.menu .list-menu{
+    position: absolute;
+    left: 45%;
+    top: 20px;
+}
+.menu > .list-menu > nav > ul > li{
+    display: inline-block;
+    padding: 15px;
+    position: relative;
+}
+.menu > .list-menu > nav > ul > li:hover span{
+    cursor: pointer;
+    color: #ccc;
+
+}
+.menu .list-menu nav ul li .subnav1{
+    position: absolute;
+    display: flex;
+    right: -85px;
+    background-color: white;
+    box-shadow: 0 0 10px #949393;
+    flex-wrap: nowrap;
+    width: 1200px;
+    height: 450px;
+    gap: 125px;
+    justify-content: center;
+     opacity: 0; 
+     visibility: hidden;
+     top: 50px;
+     border-radius: 5px;
+     transition: 0.4s ease;
+}
+
+.menu .list-menu nav ul li .ti-arrow-down{
+    font-size: 12px;
+}
+
+.menu .list-menu nav ul li .subnav1 .menu-son ul li{
+    list-style: none;
+    padding: 10px 0;
+}
+
+
+
+.menu .list-menu nav ul li:hover .subnav1 {
+     opacity: 1; 
+     visibility: visible; 
+}
+
+.subnav2 li:nth-child(5){
+    opacity: 0;
+    cursor: context-menu;
+}
+
+.subnav3 li:nth-child(1){
+    opacity: 0;
+    cursor: context-menu;
+}
+
+.subnav3 li:nth-child(4){
+    opacity: 0;
+    cursor: context-menu;
+}
+
+.subnav3 li:nth-child(5){
+    opacity: 0;
+    cursor: context-menu;
+}
+
+.subnav3 li:nth-child(6){
+    opacity: 0;
+    cursor: context-menu;
+}
+
+
+.subnav5 li:nth-child(1){
+    opacity: 0;
+    cursor: context-menu;
+}
+
+
+.subnav6 li:nth-child(1){
+    opacity: 0;
+    cursor: context-menu;
+}

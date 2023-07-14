@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap');*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ccc;
+    font-family: 'Nunito Sans', sans-serif;
+}
+section{
+    position: relative;
+}
+.cart{
+    width: 370px;
+    position: absolute;
+    height: 800px;
+    right: 0;
+    background-color: #fff;
+}
+.cart .shopping-cart .title h1  {
+    height: 30px;
+    background-color: #e6e0e0;
+    padding: 15px;
+    padding-top: 20px;
+    position: relative;
+}
+.cart .shopping-cart .title span{
+    position: absolute;
+    top: 15px;
+    left: 46%;
+    background-color: blue;
+    border-radius: 99px;
+    padding: 0 6px;
+    color: #fff;
+}
+.cart .shopping-cart .title i{
+    position: absolute;
+    left: 90%;
+    top: 20px;
+    font-size: 15px;
+    color: #fff;
+    background-color: orangered;
+    padding: 7px 9px;
+    border-radius: 99px;
+}
+.cart .shopping-cart .content-shopping{
+    width:100%;
+}
+.cart .shopping-cart .content-shopping .img{
+    display:inline;
+    margin-left: 20px;
+    
+}
+
+
+img{
+    max-width: 20%;
+    background: rgb(239, 232, 222);
+    padding: 20px;
+}
+
+
+/* PHONE */
+.cart .shopping-cart .content-shopping .phone{
+    margin: 25px 0;
+    position: relative;
+}
+
+.cart .shopping-cart .content-shopping .phone .product-information{
+    position: absolute;
+    top: 25px;
+    left: 40%;
+}
+.cart .shopping-cart .content-shopping .phone .product-information .name-product{
+    margin-bottom: 10px;
+}
+.cart .shopping-cart .content-shopping .phone .product-information .quantity{
+    border: 1px solid #ccc;
+    padding: 3px 15px;
+    border-radius: 99px;
+    color: #7e7d7d;
+}
+.cart .shopping-cart .content-shopping .phone .product-information .quantity b{
+    padding: 0 10px;
+}
+
+.cart .shopping-cart .content-shopping .phone .product-information .number-product{
+    padding-left: 20px;
+    font-weight: bold;
+}
+.cart .shopping-cart .content-shopping .phone .product-information i{
+    position: absolute;
+    top: -5px;
+    left: 105%;
+    color: #9b9b9b;
+}
+
+
+/* BOOK */
+.cart .shopping-cart .content-shopping .book{
+    margin-top: 30px ;
+    position: relative;
+}
+
+.cart .shopping-cart .content-shopping .book .product-information{
+    position: absolute;
+    top: 25px;
+    left: 40%;
+}
+
+.cart .shopping-cart .content-shopping .book .product-information .name-product{
+    margin-bottom: 10px;
+}
+.cart .shopping-cart .content-shopping .book .product-information .quantity{
+    border: 1px solid #ccc;
+    padding: 3px 15px;
+    border-radius: 99px;
+    color: #7e7d7d;
+}
+.cart .shopping-cart .content-shopping .book .product-information .quantity b{
+    padding: 0 10px;
+}
+
+.cart .shopping-cart .content-shopping .book .product-information .number-product{
+    padding-left: 20px;
+    font-weight: bold;
+}
+.cart .shopping-cart .content-shopping .book .product-information i{
+    position: absolute;
+    top: -5px;
+    left: 105%;
+    color: #9b9b9b;
+}
+
+
+/* SUBTOTAL */
+.cart .shopping-cart .subtotal{
+    margin-left: 20px;
+}
+
+.cart .shopping-cart .subtotal .money{
+    padding-left: 200px;
+}
+
+.cart .shopping-cart .subtotal p{
+    font-size: 13px;
+    padding-top: 5px;
+}
+
+.cart .shopping-cart .btn{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.cart .shopping-cart .btn .view-cart{
+    padding: 15px 135px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart .shopping-cart .btn .add-top-cart{
+    padding: 15px 130px;
+    background: rgb(64, 64, 248);
+    border: 1px solid rgb(64, 64, 248);
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart .shopping-cart .ship{
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+.cart .shopping-cart .ship i{
+    font-size: 25px;
+    color: #1268fd;
+    border: 1px solid #1268fd;
+    padding: 7px;
+    border-radius: 99px;
+}
+
+.cart .shopping-cart .ship span{
+    padding-left: 42px;
+}

@@ -70,11 +70,12 @@ section .container .list-item .item img{
     border-radius: 5px;
 }
 
-section .container .list-item .item h3{
+section .container .list-item .item h2{
     position: absolute;
     top: 20px;
     left: 20px;
     color: #fff;
+    font-family: "Asap_medium";
 }
 
 section .container .list-item .item span{
@@ -82,6 +83,7 @@ section .container .list-item .item span{
    top: 250px;
    left: 20px;
    color: #fff;
+   font-family: "Asap_medium";
 }
 
 @font-face{

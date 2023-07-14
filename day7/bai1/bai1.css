@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Asap:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Asap:wght@500&display=swap');
   *{
     margin: 0;
     padding: 0;
@@ -16,7 +14,7 @@ img{
     position: relative;
 }
 
-.text-banner{
+.banner .text-banner{
     position: absolute;
     top: 250px;
     left: 250px;
@@ -27,25 +25,25 @@ img{
     padding: 30px ;
 }
 
-.text-banner h1{
+.banner .text-banner h1{
     font-weight: bold;
     color: red;
     font-family: 'Asap', sans-serif;
 }
 
-.text-banner p{
+.banner .text-banner p{
     color:#3f3424;
     font-weight: bold;
     line-height: 1.6;
-    font-family: 'Asap', sans-serif;
+    font-family: "Asap_light";
 }
 
-.text-banner h1, p{
+.banner .text-banner h1, p{
     padding-bottom: 10px;
 }
 
-.price{
-    background-color: rgb(228, 39, 39);
+.banner .text-banner .price{
+    background-color: brown;
     display: inline;
     padding: 15px 20px;
     position: absolute;
@@ -54,3 +52,19 @@ img{
     color: #fff;
     border-radius:5px ;
 }
+@font-face{
+    font-family: "Asap_sans";
+    src: url(./font/Asap-Regular.ttf);
+}
+
+@font-face{
+    font-family: "Asap_medium";
+    src: url(./font/Asap-Medium.ttf);
+    font-weight: 100;
+}
+
+@font-face{
+    font-family: "Asap_light";
+    src: url(./font/Asap-Light.ttf);
+}
+
