@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+:root{
+    --container-width:1326px ;
+    --column-spacing: 20px;
+}
+.col-1{
+    --column-size:1
+}
+
+.col-2{
+ 
+    --column-size:2
+}
+.col-3{
+ 
+    --column-size:3
+}
+.col-4{
+ 
+    --column-size:4
+}
+.col-5{
+ 
+    --column-size:5
+}
+.col-6{
+ 
+    --column-size:6
+}
+.col-7{
+ 
+    --column-size:7
+}
+.col-8{
+ 
+    --column-size:8
+}
+.col-9{
+ 
+    --column-size:9
+}
+.col-10{
+    --column-size:10
+}
+
+.col-11{
+    --column-size:11
+}
+.col-12{
+    --column-size:12
+}
+#header{
+    padding: 54px 0;
+    width: 1903px;
+    position: absolute;
+}
+.container{
+    width: var(--container-width);
+    margin: 0 auto;
+}
+
+
+.row [ class^="col-"]{
+    --column-width: calc(100% (12 / var(--column-size))):
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.list-item{
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+.item span{
+    font-weight: bold;
+}
+.item-menu ul{
+    display: flex;
+    gap: 50px;
+}
+.item-menu ul li{
+    padding: 25px 0;
+    list-style: none;
+}
+
+.item-menu ul li a{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    transition: all .2s linear;
+}
+
+.item-menu ul li:hover a{
+    color: #fff;
+}
+
+section{
+    background: url(/day11/img/header-bg.jpg) no-repeat;
+    background-size: cover;
+}
+
+#banner{
+    width: var(--container-width);
+    margin: 0 auto;
+    height: 100vh;
+}
+
+.solgan{
+    padding-top: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-solgan{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    height: 400px; 
+    font-weight: bold;
+    align-items: flex-start
+}
+
+.title-solgan h2{
+    font-family: 'Bebas Neue', sans-serif;
+    border: 2px dashed;
+    font-size: 24px;
+    color: #3d2514;
+    line-height: 35px;
+    font-weight: 400;
+    padding: 0 7px;
+}
+
+.title-solgan h3{
+    font-family: 'Alfa Slab One', cursive;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 120px;
+    Color:#3d2514;
+    text-shadow: 4px 4px #fff;
+}
+
+.title-solgan span{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 56px;
+    line-height: 84px;
+    Color:#3d2514;
+    text-shadow: 4px 4px #fff;
+
+}
+.img_banner{
+    position: relative;
+}
+
+.price{
+    width: 170px;
+    height: 170px;
+    background: #bf2222;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: BebasNeue, sans-serif;
+    position: absolute;
+    left: 15%;
+    bottom: 0;
+}
+
+.price-product{
+    border: 2px dashed #fff;
+    width: 150px;
+    height: 150px;
+    border-radius: 99px;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.price .price-product .money span:nth-child(1){
+    font-family: BebasNeue, sans-serif;
+    font-Size: 69px;
+    Line-Height:103px;
+    font-weight: 400;
+}

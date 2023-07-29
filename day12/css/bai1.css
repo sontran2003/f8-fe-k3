@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: url(/day12/img/landing-background.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+  body .main {
+    background-image: url(https://hoanganf8.github.io/htmlcss_project02/image/landing-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 center;
+  }
+  .flex{
+    position: relative;
+  }
+ .content {
+  position: absolute;
+  top: 220px;
+  left: 13%;
+  text-align: center;
+  width: 23%;
+  color: #fff;
+  }
+  .tabs{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .flex #login:checked ~ .content .tabs .login-tab {
+    background-color: #fff;
+    color: #3e3f5e;
+  }
+
+  .flex #register:checked ~ .content .tabs .register-tab {
+    background-color: #fff;
+    color: #3e3f5e;
+  }
+  .td-title{
+    position: relative;
+    top: -35px;
+    height: 120px;
+
+  }
+  .td-title h1{
+    font-size: 100px;
+    font-family: "Titillium Web", sans-serif;
+  }
+  .document_title{
+    text-align: center;
+    margin-bottom: 80px;
+    margin-top: 15px;
+  }
+  .document_title p{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 500;
+  }
+  .tabs{
+    font-family: 'Rajdhani', sans-serif;
+  }
+  .tabs label:nth-child(1){
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 15px 65px;
+    border-radius:12px 0 0 12px ;
+    transition:  all 0.5s;
+    cursor: pointer;
+  }
+
+  .tabs label:nth-child(2){
+    border-top: 1px solid #fff;
+    border-right: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 15px 65px;
+    border-radius:0 12px 12px 0 ;
+    transition:  all 0.5s;
+    cursor: pointer;
+
+  }
+  .form{
+    position: relative;
+  }
+
+  .form .login-form .img-login{
+    position: absolute;
+    top: -67px;
+    left: -75px;
+  }
+
+  .title-login h3{
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color: #3e3f5e;
+  }
+.form .login-form{
+  position: absolute;
+  background-color: #fff;
+  left: 60%; 
+  width: 25%;
+  height: 600px;
+  top: 200px;
+  text-align: center;
+  padding: 35px;
+  transition: all 1s ease; 
+  border-radius: 10px;
+}
+.form .login-form form{
+  margin-top: 70px;
+}
+
+.login-form form .email{
+  width: 340px;
+  margin-bottom:20px ;
+  height: 50px;
+  border: 1px solid #eee;
+	outline: none;
+  transition: 0.25s ease;
+  font-size: 20px;
+  padding-left: 19px;
+  border-radius:10px ;
+}
+
+.login-form .email:focus{
+  border-color:#6a5af9 ;
+}
+
+.login-form form{
+  position: relative;
+}
+
+.login-form form .label-email{
+  position: absolute;
+  top: 18%;
+  transform: translatey(-50%);
+  left: 50px;
+  font-size: 15px;
+  user-select: none;
+  color: #999;
+  pointer-events: none;
+  transition: 0.4s;
+  font-family: 'Rajdhani', sans-serif;
+}
+.email:focus + .label-email{
+  top: 0;
+  background-color: white;
+  font-size: 13px;
+}
+
+.login-form .password:focus{
+  border-color:#6a5af9 ;
+}
+
+.login-form form .password{
+  width: 340px;
+  margin-bottom:20px ;
+  height: 50px;
+  border: 1px solid #eee;
+	outline: none;
+  transition: 0.25s ease;
+  font-size: 20px;
+  padding-left: 19px;
+  border-radius:10px ;
+}
+
+.login-form form .label-password{
+  position: absolute;
+  top: 68%;
+  transform: translatey(-50%);
+  left: 50px;
+  font-size: 15px;
+  user-select: none;
+  color: #999;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  font-family: 'Rajdhani', sans-serif;
+  
+}
+
+.password:focus + .label-password{
+  top: 50%;
+  background-color: white;
+  font-size: 13px;
+}
+
+.flex #register:checked ~ .form .login-form{
+  transform: translate(50%, 0%);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+}
+.flex #register:checked ~ .form .register-form{
+  transform: translate(-10%, 0);
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
+
+.form .login-form .form-row .checked-login{
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.form .login-form .form-row .checked-login label{
+  position: relative;
+  cursor: pointer;
+}
+.form .login-form .form-row .checked-login label .checkbox-remember{
+  display: none;
+}
+.form .login-form .form-row .checked-login label span{
+  padding-left: 5px;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 14px;
+  color: #3e3f5e;
+}
+
+.checked-login .label::before{
+  width: 15px;
+  content: " ";
+  height: 15px;
+  display: inline-block;
+  border: 1px solid #999;
+  float: left;
+  border-radius: 5px;
+  
+}
+.form .login-form .form-row .checked-login label i{
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 17px;
+  display: none;
+  color: #ffffff;
+  padding: 0 2px;
+  border: #999;
+  border-radius: 5px;
+  transition:  all 0.9s linear;
+}
+
+.form .login-form .form-row .checked-login .label .checkbox-remember:checked ~ i{
+  display: block;
+  color: #ffffff;
+  background-color: #00c7d9;
+}
+.form .login-form .form-row .checked-login a{
+  font-family: 'Rajdhani', sans-serif;
+  color: #999;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.form .login-form .form-row .checked-login a:hover {
+  color: #00c7d9;
+}
+
+.form .login-form .form-row .btn{
+  margin-top: 30px;
+}
+
+.form .login-form .form-row .btn button{
+  padding: 15px 105px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 14px;
+  background-color: #615dfa;
+  box-shadow: 4px 7px 12px 0 rgba(97,93,250,.2);
+  color: #fff;
+}
+
+.form .login-form .form-row .btn:hover button{
+  background-color: #5753e4;
+}
+
+.border{
+  width: 335px;
+  height: 1px;
+    background-color: #d8d4d4;
+    margin: 45px auto;
+  }
+  
+  .border p{
+    position: relative;
+    top: -8px;
+    background-color: #fff;
+    display: inline;
+    padding: 15px;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 14px;
+    color: #3e3f5e;
+  }
+  .social-network a{
+    text-decoration: none;
+    padding: 0px 5px;
+  }
+  .social-network a img{
+    max-width: 9%;
+    transition: all 0.4s ease;
+  }
+  
+  .social-network a img:hover {
+    transform: translateY(-4px);
+  }
+  
+  /* REGISTER FORM */
+  .form .register-form{
+    position: absolute;
+    background-color: #fff;
+    width: 450px;
+    height: 700px;
+    left: 60%;
+    top: 200px;
+    opacity: 0;
+    visibility:hidden;
+    transition: all 1s ease ;
+    transform: translate(50%, 0);
+
+  }
+  .form .register-form .img-register{
+    position: absolute;
+    top: -15px;
+    left: -72px;
+  }
+
+  .form .register-form .content-register{
+    padding: 64px;
+  }
+  .form .register-form .content-register .title-register h3{
+    text-align: center;
+  }
